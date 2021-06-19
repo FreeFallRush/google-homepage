@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color: #ffff;   
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+}
+
+#fit {
+    flex-shrink: 0;
+}
+
+#google-navbar {
+    color: rgba(0, 0, 0, 0.87);
+    height: 48px;
+}
+
+.google-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-family: Roboto, Arial,sans-serif;
+    font-size:13px; 
+    cursor: pointer;
+}
+
+.google-bar li {
+    list-style: none;
+    padding: 6px;
+    justify-content: baseline;   
+}
+
+#grid-icon {
+    font-size: 18px;
+    color: #5f6368;
+    opacity: 1;
+}
+
+.google-bar li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: arial,sans-serif;
+}
+
+.google-bar li a:hover{
+    text-decoration: underline;
+}
+
+.google-bar button {
+    color: #ffff;
+    background: #1a73e8;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    border-radius: 4px;    
+}
+
+.google-bar button:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+}
+
+#logo {
+    height: 100%;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+img {
+    max-height: 92px;   
+}
+
+#search-section {
+    display: block;
+    padding:10px;
+}
+
+
+.search-bar {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;    
+    max-width: 584px;
+    
+}
+
+.search-bar:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+input {
+    position: relative;
+    display: flex;
+    flex:1;
+    background-color: transparent;
+    border: none;
+}
+
+#search-icon {  
+    margin-top: 14px;
+    margin-left: 8px;
+    color: #9aa0a6;
+    position: relative;
+    display: inline-block;
+    
+}
+
+#keyboard-icon {
+    position: relative;   
+    background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    cursor: pointer;
+    margin-right: 4px;
+    padding: 0 8px;
+    width: 24px;
+    
+}
+
+#microphone-icon {
+    position: relative;   
+    cursor: pointer;
+    margin-top: 12px;
+    margin-right: 4px;
+    padding: 0 8px;
+    width: 24px;
+    color: rgb(185, 5, 41);
+}
+
+#btn-options {
+    text-align: center;
+    padding-top: 14px;
+}
+
+.search-options {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-options:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#lang { 
+    text-align: center;
+    font-family: arial,sans-serif;
+    color: #222;
+    font-size: small;
+    margin-top: 0;
+    margin-bottom: 40px;  
+}
+
+#lang a {
+    display: inline-block;
+    padding: 0 3px;
+    color: #1a0dab;
+    text-decoration: none;
+    
+}
+
+p {
+    line-height: 28px;
+    white-space: nowrap;   
+}
+
+footer {  
+    font-family: Roboto,arial,sans-serif; 
+    font-size: 15px;
+    background: #f2f2f2;
+    margin-top: auto;
+}
+
+#location {
+    height: 30px; 
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    display: block;
+    list-style: none;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #70757a;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 1200px) {
+    .footer-nav  {
+    justify-content: space-evenly;
+  }
+  .footbar {
+    justify-content: space-evenly;
+  }
+}
